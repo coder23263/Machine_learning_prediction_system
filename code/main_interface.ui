@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>842</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>18</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>机器学习算法汇总</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="about_us">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>180</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>关于我们</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="choose_orient">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>69</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>聚类</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>预测</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>分类</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="choose_orient_lable">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择算法方向</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="choose_data_lable">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择数据集大小</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="choose_data">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>120</y>
+      <width>69</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>小</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>中</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>大</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>自定义</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="choose_algorithme_lable">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>80</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择算法</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="choose_algorithme">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>120</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="run">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>80</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ans_lable">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>运行效果</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ans">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>531</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>pic</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>130</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>刷新算法</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ans_lable_2">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>250</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>运行日志</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>300</y>
+      <width>131</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="all_ans">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>630</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>查看所有运行结果</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>842</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
